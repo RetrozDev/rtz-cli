@@ -1,0 +1,26 @@
+{
+  "name": "rtz-cli",
+  "version": "1.0.0",
+  "description": "A personnal workflow cli coded in ts ",
+  "license": "ISC",
+  "author": "Retroz",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "format": "npx @biomejs/biome format --write ./src",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "tsx": "^4.19.3"
+  },
+  "bin": {
+    "rtz": "./dist/index.js"
+  }
+}
