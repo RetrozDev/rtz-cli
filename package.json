@@ -1,6 +1,6 @@
 {
   "name": "rtz-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A personnal workflow cli coded in ts ",
   "license": "MIT",
   "author": "Retroz",
