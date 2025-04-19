@@ -2,7 +2,7 @@
   "name": "rtz-cli",
   "version": "1.0.0",
   "description": "A personnal workflow cli coded in ts ",
-  "license": "ISC",
+  "license": "MIT",
   "author": "Retroz",
   "type": "module",
   "main": "dist/index.js",
