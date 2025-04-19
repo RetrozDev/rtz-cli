@@ -17,3 +17,5 @@ Once installed, you can run the CLI by typing `rtz` in your terminal.
 
 - `help` Show all available commands 
 
+- `biome-init` Install and initialize biomejs
+

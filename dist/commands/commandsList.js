@@ -1,5 +1,6 @@
 import { helloAction } from './actions/hello.js';
 import { biomeAction } from './actions/biome.js';
+import { startPomodoro } from './actions/pomodoro.js';
 export const commands = [
     {
         name: 'hello',
@@ -8,7 +9,7 @@ export const commands = [
             {
                 flag: '-n, --name <name>',
                 description: 'Name to greet',
-                default: ' ',
+                default: 'World',
             },
         ],
         action: helloAction,
@@ -19,7 +20,25 @@ export const commands = [
         action: biomeAction,
     },
     {
-        name: 'help',
-        description: 'Display available commands',
+        name: 'pomodoro',
+        description: 'Start a pomodoro timer',
+        options: [
+            {
+                flag: '-s, --sessions <sessions>',
+                description: 'Number of sessions',
+                default: '1',
+            },
+            {
+                flag: '-w, --work <minutes>',
+                description: 'Work duration',
+                default: '25',
+            },
+            {
+                flag: '-b, --break <minutes>',
+                description: 'Break duration',
+                default: '5',
+            },
+        ],
+        action: startPomodoro,
     },
 ];
