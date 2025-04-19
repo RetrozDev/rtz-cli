@@ -1,6 +1,6 @@
 {
   "name": "rtz-cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A personnal workflow cli coded in ts ",
   "license": "MIT",
   "author": "Retroz",
@@ -13,12 +13,12 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "chalk": "^5.4.1",
-    "commander": "^13.1.0",
-    "tsx": "^4.19.3"
+    "commander": "^13.1.0"
   },
   "bin": {
     "rtz": "./dist/index.js"
