@@ -14,6 +14,6 @@ export const commands = [
     },
     {
         name: 'help',
-        description: 'Display available commands in a styled format'
+        description: 'Display available commands'
     }
 ];
