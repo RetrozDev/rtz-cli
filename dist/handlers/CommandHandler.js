@@ -3,7 +3,7 @@ export class CommandHandler {
         this.program = program;
     }
     registerCommand(cmd) {
-        if (cmd.name === 'help')
+        if (cmd.name === "help")
             return;
         const command = this.program.command(cmd.name).description(cmd.description);
         this.registerOptions(command, cmd);

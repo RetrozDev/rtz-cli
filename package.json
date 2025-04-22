@@ -1,6 +1,6 @@
 {
   "name": "rtz-cli",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A personnal workflow cli coded in ts ",
   "license": "MIT",
   "author": "Retroz",
@@ -8,8 +8,10 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "build": "tsc",
     "format": "npx @biomejs/biome format --write ./src",
-    "build": "tsc"
+    "lint": "npx @biomejs/biome lint --write ./src",
+    "check": "npx @biomejs/biome check --write ./src"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
